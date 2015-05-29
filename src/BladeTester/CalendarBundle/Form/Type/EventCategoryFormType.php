@@ -23,19 +23,8 @@ class EventCategoryFormType extends AbstractType {
             ->add('name', 'text', array(
                 'label' => 'bladetester_calendar.label.category.name',
             ))
-            ->add('color', 'choice', array(
-                'label' => 'bladetester_calendar.label.category.color',
-                'choices' => array(
-                    Color::BLACK => 'Black',
-                    Color::RED => 'Red',
-                    Color::GREEN => 'Green',
-                    Color::BLUE => 'Blue',
-                    Color::YELLOW => 'Yellow',
-                    Color::CYAN => 'Cyan',
-                    Color::MAGENTA => 'Magenta',
-                    Color::GRAY => 'Gray',
-                    Color::WHITE => 'White',
-                    ),
+            ->add('color', 'text', array(
+                'label' => 'bladetester_calendar.label.category.color'
                 )
             );
     }

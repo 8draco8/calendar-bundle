@@ -1,7 +1,9 @@
 <html>
     <head>
         <link rel="stylesheet" href="{{ asset('bundles/bladetestercalendar/css/calendar-header.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/bladetestercalendar/css/calendar.css') }}"><link rel="stylesheet" href="{{ asset('bundles/bladetestercalendar/css/calendar-header.css') }}">
         <link rel="stylesheet" href="{{ asset('bundles/bladetestercalendar/css/calendar.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/bladetestercalendar/css/spectrum.css') }}">
     </head>
     <body>
             <div class="app">
@@ -26,6 +28,7 @@
     {% block javascripts %}
         <script type="text/javascript" src="{{ asset('bundles/bladetestercalendar/js/jquery-1.9.1.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('bundles/bladetestercalendar/js/calendar.js') }}"></script>
+        <script src="{{ asset('bundles/bladetestercalendar/js/spectrum.js') }}"></script>
     {% endblock %}
     </body>
 </html>

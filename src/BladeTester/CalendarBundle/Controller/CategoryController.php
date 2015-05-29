@@ -5,7 +5,6 @@ namespace BladeTester\CalendarBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
 
-use BladeTester\CalendarBundle\Model\Color;
 
 class CategoryController extends BaseController {
 
@@ -37,7 +36,6 @@ class CategoryController extends BaseController {
         }
         return array(
             'form' => $form->createView(),
-            'colors' => Color::getAll(),
             'category' => $category,
             );
     }
@@ -58,7 +56,6 @@ class CategoryController extends BaseController {
         }
         return array(
             'form' => $form->createView(),
-            'colors' => Color::getAll(),
             'category' => $category,
             );
     }

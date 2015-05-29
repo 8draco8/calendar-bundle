@@ -5,17 +5,15 @@
         {{ form_widget(form.name) }}
     </li>
     <li>
-        <ul class="calendar-colors">
-            {% for color in colors %}
-                <li id="{{ color }}" class="calendar-color event-color-{{ color }}{% if category.color == color %} active{% endif %}"></li>
-            {% endfor %}
-        </ul>
-    </li>
-    <li style="display:none">
-        {{ form_label(form.color) }}
+        <label for="category_name" class="required">Color</label>
         {{ form_errors(form.color) }}
-        {{ form_widget(form.color) }}
+        {{ form_widget(form.color, {'attr': {'id': 'colors'}}) }}
+
     </li>
 </ul>
 {{ form_rest(form) }}
-
+<script>
+$("#colors").spectrum({
+    color: "#f00"
+});
+</script>
